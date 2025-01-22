@@ -13,7 +13,7 @@ Welcome to my ITIS3135 homepage! My name is **Angel Ganges**, and this is my fir
 
 ## About This Page
 
-This page serves as a personal hub for exploring and sharing resources related to ITIS3135. Feel free to navigate through the sections and check out the links below for additional learning opportunities.
+This page is a personal hub for looking into resources related to ITIS3135. Feel free to navigate through the sections and check out the links below.
 
 ---
 
