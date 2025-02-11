@@ -1,0 +1,39 @@
+body{
+    background-color: darkslategray;
+    text-align: center;
+    color: black;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+
+a {
+    color: cornsilk;
+    text-decoration: none;
+}
+
+a:hover {
+    color: rgb(154, 63, 240);
+    text-decoration: none;
+
+}
+
+main {
+    text-align: left;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+h2 {
+    text-align: center;
+}
+
+img {
+    width: 75%;
+}
+
+figure {
+    text-align: center;
+    font-style: italic;
+}
+
+
+
