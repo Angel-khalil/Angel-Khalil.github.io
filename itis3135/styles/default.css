@@ -40,3 +40,13 @@ figure {
     width: 88px;
     height: 31px;
 }
+
+.validator-badge {
+    border: 0;
+    width: 88px;
+    height: 31px;
+    display: inline-block;
+    padding: 5px;
+    background-color: #f8f8f8; /* Light gray background */
+    border-radius: 5px;
+}
