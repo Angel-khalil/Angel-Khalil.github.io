@@ -1,8 +1,8 @@
-body{
+body {
     background-color: darkslategray;
     text-align: center;
     color: black;
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 a {
@@ -13,7 +13,6 @@ a {
 a:hover {
     color: rgb(154, 63, 240);
     text-decoration: none;
-
 }
 
 main {
@@ -35,5 +34,9 @@ figure {
     font-style: italic;
 }
 
-
-
+/* Moved validation image styles here */
+.validation-img {
+    border: 0;
+    width: 88px;
+    height: 31px;
+}
