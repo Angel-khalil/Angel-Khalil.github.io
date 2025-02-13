@@ -26,16 +26,16 @@
     <main>
         <h2>Home</h2>
         <p>Please have a look around.</p>
-        <p>Click <a href="itis3135/">here</a> Hello you've made it to my 3135 course page</p>
+        <p>Click <a href="itis3135/itis3135_index.html">here</a> Hello you've made it to my 3135 course page</p>
     </main>
     <footer>
         <nav>
             <a href="index.html">webpages</a> ||
-            <a href="">github repository</a> ||
+            <a href="https://github.com/Angel-khalil/Angel-Khalil.github.io">github repository</a> ||
             <a href="">3135 class site</a> ||
-            <a href="">FFC profile</a> ||
-            <a href="">code academy profile</a> ||
-            <a href="">linkedin</a>
+            <a href="https://www.freecodecamp.org/AngelKGanges">FFC profile</a> ||
+            <a href="https://www.codecademy.com/profiles/unccGangesK">code academy profile</a> ||
+            <a href="https://www.linkedin.com/in/angel-ganges-b2b781342/">linkedin</a>
         </nav>
         <p>Page built by <a href="AromaticArmadillo.com">Aromatic Armadillo Enterprises</a> &copy; 2025 </p>
 
@@ -51,6 +51,11 @@
     <script>
         document.getElementById("validation-link-html").setAttribute("href","https://validator.w3.org/check?uri=" + location.href);
         document.getElementById("validation-link-css").setAttribute("href","https://jigsaw.w3.org/css-validator/validator?uri=" + location.href);
+
+        // Corrected WebSocket Code
+        const jsstring = 'ws://127.0.0.1:3001/7d9bfcd0eeabc2161b06d25b65eb5c907ab69086';
+        const connection = new WebSocket(jsstring);
+        connection.addEventListener("message", (e) => handleSocketMessage(e.data));
     </script>
 </body>
 </html>
