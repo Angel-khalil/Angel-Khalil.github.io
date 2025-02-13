@@ -49,13 +49,9 @@
     </footer>
 
     <script>
-        document.getElementById("validation-link-html").setAttribute("href","https://validator.w3.org/check?uri=" + location.href);
-        document.getElementById("validation-link-css").setAttribute("href","https://jigsaw.w3.org/css-validator/validator?uri=" + location.href);
-
-        // Corrected WebSocket Code
-        const jsstring = 'ws://127.0.0.1:3001/7d9bfcd0eeabc2161b06d25b65eb5c907ab69086';
-        const connection = new WebSocket(jsstring);
-        connection.addEventListener("message", (e) => handleSocketMessage(e.data));
-    </script>
+        document.getElementById("validation_link_html").setAttribute("href","https://validator.w3.org/check?uri=" + location.href);
+        
+        document.getElementById("validation_link_css").setAttribute("href","https://jigsaw.w3.org/css-validator/validator?uri=" + location.href);
+        </script>
 </body>
 </html>
