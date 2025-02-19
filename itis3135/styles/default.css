@@ -49,4 +49,5 @@ figure {
     padding: 5px;
     background-color: #f8f8f8; /* Light gray background */
     border-radius: 5px;
+    box-sizing: border-box;
 }
