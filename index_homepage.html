@@ -1,17 +1,17 @@
-<!DOCTYPE html> 
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Angel Ganges's personal homepage with links to GitHub, LinkedIn, and school projects.">
-    <title>Angel Ganges's Aromatic Armadillo || Personal homepage</title>
+    <title>Angel Ganges's Aromatic Armadillo || Personal Homepage</title>
     <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="itis3135/styles/homepage.css">
 </head>
 <body>
+
 <header>
     <h1>Angel Ganges's Home Page</h1>
-    <p>welcome to my personal website!</p>
+    <p>Welcome to my personal website!</p>
 </header>
 
 <main>
@@ -28,13 +28,24 @@
         <a href="https://www.linkedin.com/in/angel-ganges-b2b781342/" target="_blank">LinkedIn</a>
     </nav>
     <p>&copy; 2025 Angel Ganges. All Rights Reserved.</p>
-    
-    <a href="https://validator.w3.org/check?uri=referer" target="_blank">
-        <img src="https://www.w3.org/Icons/valid-html401" alt="Valid HTML!" class="validation-img">
+
+    <!-- HTML Validation Badge -->
+    <a href="https://validator.w3.org/check?uri=referer" id="validation_link_html">
+        <img class="validator-badge validation-img"
+        src="https://mytienhoang.github.io/itis3135/z_archives/html_validation.png" alt="Valid HTML!">
     </a>
-    <a href="https://jigsaw.w3.org/css-validator/check/referer" target="_blank">
-        <img src="https://jigsaw.w3.org/css-validator/images/vcss-blue" alt="Valid CSS!" class="validation-img">
+
+    <!-- CSS Validation Badge -->
+    <a href="https://jigsaw.w3.org/css-validator/check/referer" id="validation_link_css">
+        <img class="validator-badge validation-img" src="https://jigsaw.w3.org/css-validator/images/vcss" alt="Valid CSS!">
     </a>
 </footer>
+
+<script>
+    // Dynamically set validator links to the current page URL
+    document.getElementById("validation_link_html").setAttribute("href", "https://validator.w3.org/check?uri=" + location.href);
+    document.getElementById("validation_link_css").setAttribute("href", "https://jigsaw.w3.org/css-validator/validator?uri=" + location.href);
+</script>
+
 </body>
 </html>
