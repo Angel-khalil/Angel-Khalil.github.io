@@ -4,18 +4,66 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Angel Ganges's Aromatic Armadillo || Personal Homepage</title>
-    <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="itis3135/styles/homepage.css">
+    <style>
+        body {
+            background-color: cyan;
+            text-align: center;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+
+        h1 {
+            color: rgb(43, 128, 226);
+            padding-bottom: 20px;
+        }
+
+        h2 {
+            color: rgb(43, 128, 226);
+            text-align: left;
+            padding-bottom: 10px;
+        }
+
+        p {
+            color: rgb(144, 68, 142);
+        }
+
+        a {
+            color: rgb(0, 0, 0);
+            text-decoration: none;
+        }
+
+        a:hover {
+            color: aliceblue;
+            text-decoration: none;
+        }
+
+        .validation-img {
+            border: 0;
+            width: 88px;
+            height: 31px;
+        }
+
+        .validator-badge {
+            border: 0;
+            width: 88px;
+            height: 31px;
+            display: inline-block;
+            padding: 5px;
+            background-color: #f8f8f8;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+    </style>
 </head>
 <body>
 
 <header>
-    <h1>Angel Ganges's Home Page</h1>
+    <h1>ITIS3135 Angel Ganges</h1>
     <p>Welcome to my personal website!</p>
 </header>
 
 <main>
-    <h2>About Me</h2>
+    <h2>Home Page</h2>
     <p>Hi! I'm Angel, a student at UNC Charlotte. This is my personal homepage where you can find links to my work, school projects, and professional profiles.</p>
 </main>
 
@@ -41,11 +89,7 @@
     </a>
 </footer>
 
-<script>
-    // Dynamically set validator links to the current page URL
-    document.getElementById("validation_link_html").setAttribute("href", "https://validator.w3.org/check?uri=" + location.href);
-    document.getElementById("validation_link_css").setAttribute("href", "https://jigsaw.w3.org/css-validator/validator?uri=" + location.href);
-</script>
+<script src="itis3135/scripts/validationLinks.js"></script>
 
 </body>
 </html>
