@@ -1,17 +1,177 @@
-<!DOCTYPE html>
+<!DOCTYPE html> 
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AROMATIC ARMADILLO DESIGN PAGE</title>
+    <title>Aromatic Armadillo Enterprises | ITIS3135 | Angel K Ganges</title>
     <style>
-        body{
-            color: red;
-            background-color: bisque;
+        
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #2b2d42; 
+            color: #f4e285;
+            margin: 0;
+            padding: 0;
+        }
+
+        
+        header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background-color: #4a4e69; 
+            color: #ffecd1; 
+            padding: 20px;
+        }
+
+        header img {
+            width: 15px;
+            height: 15px;
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 24px;
+        }
+
+        header .tagline {
+            font-style: italic;
+            font-size: 14px;
+            color: #f4e285; 
+        }
+
+        
+        main {
+            padding: 20px;
+            text-align: center;
+        }
+
+        h2 {
+            color: #e07a5f; 
+        }
+
+        ul {
+            list-style: none; 
+            padding: 0;
+        }
+
+        ul li {
+            margin: 10px 0;
+            padding-left: 25px;
+            color: #ffcb69; 
+            background: url('bullet-icon.png') no-repeat left center; 
+        }
+
+        .contact-block {
+            margin: 20px auto;
+            padding: 15px;
+            background-color: #6a994e; 
+            border: 2px solid #ffcb69; 
+            border-radius: 10px;
+            max-width: 300px;
+            text-align: left;
+            color: #ffffff; 
+        }
+
+        
+        footer {
+            background-color: #4a4e69; 
+            color: #ffecd1; 
+            text-align: center;
+            padding: 15px;
+        }
+
+        footer nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 10px 0;
+        }
+
+        footer nav ul li {
+            display: inline;
+            margin-right: 10px;
+        }
+
+        footer a {
+            color: #f4e285; 
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline; 
+        }
+
+        footer img {
+            margin: 5px;
+            vertical-align: middle;
+        }
+
+        
+        @media (max-width: 600px) {
+            header {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            header img {
+                margin-bottom: 10px;
+            }
         }
     </style>
 </head>
 <body>
-    <P>This is the design page of Aromatic Armadillo</P>
+    <header>
+        <img src="/itis3135/images/armadillo-cartoon-illustrations.jpg" alt="Logo of Aromatic Armadillo Enterprises">
+        <div>
+            <h1>Aromatic Armadillo Enterprises | ITIS 3135 | Angel Ganges</h1>
+            <p class="tagline">Where the Quirky Meets the Curious</p>
+        </div>
+    </header>
+    <main>
+        <h2>Our Services</h2>
+        <p>Welcome to Angel Enterprises, your go-to firm for web design and development solutions. We specialize in creating clean, modern, and accessible websites tailored to your needs.</p>
+
+        <h3>Details</h3>
+        <ul>
+            <li><strong>Experienced Professionals</strong>: Our team has the skills and expertise to bring your vision to life.</li>
+            <li><strong>Unique, Brand-Focused Designs</strong>: We build designs that are one-of-a-kind and perfectly match your brand’s personality.</li>
+            <li><strong>Fully Mobile-Compatible</strong>: We ensure your site runs smoothly on all devices, from mobile phones to laptops.</li>
+            <li><strong>Boost Your Online Presence</strong>: Our strategies help improve your search engine rankings and increase traffic.</li>
+            <li><strong>Inclusive for All Users</strong>: We follow industry standards to make your website accessible to everyone.</li>
+            <li><strong>Efficient Project Delivery</strong>: We deliver results quickly while maintaining the highest quality standards.</li>
+            <li><strong>Budget-Friendly Options</strong>: Get high-quality work at prices that won't break the bank.</li>
+        </ul>
+
+        <div class="contact-block">
+            <p><strong>Email:</strong> contact@angelenterprises.co</p>
+            <p><strong>Phone:</strong> (801) 456-7890</p>
+            <p><strong>Address:</strong> 2899 Grayson Lane, Charlotte, NC</p>
+        </div>
+    </main>
+    <footer>
+        <nav>
+            <ul>
+                <li><a href="index.html">Services</a></li>
+                <li><a href="/itis3135/introduction.html">About Us</a></li>
+                <li><a href="/itis3135/contract.html">Contact</a></li>
+            </ul>
+        </nav>
+        <p>&copy; 2025 Angel Ganges. All Rights Reserved.</p>
+
+        <a href="https://validator.w3.org/check?uri=referer" id="validation_link_html">
+            <img class="validator-badge validation-img"
+            src="https://mytienhoang.github.io/itis3135/z_archives/html_validation.png" alt="Valid HTML!">
+        </a>
+
+        <a href="https://jigsaw.w3.org/css-validator/check/referer" id="validation_link_css">
+            <img class="validator-badge validation-img" src="https://jigsaw.w3.org/css-validator/images/vcss" alt="Valid CSS!">
+        </a>
+
+        <div id="accumulus-validator"></div>
+    </footer>
+
+    <script src="itis3135/scripts/validationLinks.js"></script>
+    <script src="https://accumulus-validator.com/validator.js" defer></script>
+    <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
 </body>
 </html>
