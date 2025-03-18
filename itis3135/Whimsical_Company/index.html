@@ -65,8 +65,7 @@
 </head>
 <body>
     <header>
-        <h1>Aromatic Armadillo</h1>
-        <p><em>"Handcrafted pottery with a timeless touch"</em></p>
+        <div data-include="components/header.html"></div>
     </header>
     <nav>
         <a href="https://webpages.charlotte.edu/aganges/">Home</a>
@@ -92,8 +91,15 @@
         <p>Explore our latest creations and find the perfect pottery piece for your home.</p>
     </main>
     <footer>
-        <p>&copy; 2025 Aromatic Armadillo. All rights reserved.</p>
-        <p><em>"Handcrafted pottery with a timeless touch"</em></p>
+        
     </footer>
+    <div data-include="components/footer.html"></div>
+
+    <script>
+        document.getElementById("validation_link_html").setAttribute("href","https://validator.w3.org/check?uri=" + location.href);
+        
+        document.getElementById("validation_link_css").setAttribute("href","https://jigsaw.w3.org/css-validator/validator?uri=" + location.href);
+        </script>
+        <script src="scripts/HTMLInclude.min.js"></script>
 </body>
 </html>
