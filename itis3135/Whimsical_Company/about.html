@@ -52,10 +52,7 @@
         <p><em>"Handcrafted pottery with a timeless touch"</em></p>
     </header>
     <nav>
-        <a href="index.html">Home</a>
-        <a href="about.html">About</a>
-        <a href="designs.html">Designs</a>
-        <a href="contact.html">Contact</a>
+        <div data-include="components/header.html"></div>
     </nav>
     <main>
         <h2>About Aromatic Armadillo</h2>
@@ -71,5 +68,13 @@
         <p>&copy; 2025 Aromatic Armadillo. All rights reserved.</p>
         <p><em>"Handcrafted pottery with a timeless touch"</em></p>
     </footer>
+    <div data-include="components/footer.html"></div>
+
+    <script>
+        document.getElementById("validation_link_html").setAttribute("href","https://validator.w3.org/check?uri=" + location.href);
+        
+        document.getElementById("validation_link_css").setAttribute("href","https://jigsaw.w3.org/css-validator/validator?uri=" + location.href);
+        </script>
+        <script src="scripts/HTMLInclude.min.js"></script>
 </body>
 </html>
