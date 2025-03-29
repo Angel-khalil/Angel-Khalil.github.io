@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Tables Assignment</title>
+    <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
+    <style>
+        body {
+            background-color: rgb(23, 23, 23);
+            color: #d29a00;
+            font-family: Arial, sans-serif;
+        }
+
+        footer {
+            text-align: center;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 15px;
+        }
+
+        nav ul li a {
+            color: #d29a00;
+            text-decoration: none;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        th, td {
+            border: 1px solid #000000;
+            padding: 8px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #c07000;
+            color: rgb(56, 0, 119);
+        }
+
+        tr:nth-child(odd) {
+            background-color: #333333;
+        }
+
+        tr:nth-child(even) {
+            background-color: #555555;
+        }
+
+        figcaption {
+            font-weight: bold;
+            font-size: 18px;
+            margin-bottom: 8px;
+        }
+
+        table th, table td {
+            text-align: center;
+        }
+
+        td[headers] {
+            font-style: italic;
+        }
+
+        .validation-img {
+            border: 0;
+            width: 88px;
+            height: 31px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>ITIS3135 - Angel Ganges</h1>
+        
+    </header>
+    
+    <main>
+        <h2>HTML Tables - Whimsical Company</h2>
+
+        <h3>My Tabular Data</h3>
+        <ol>
+            <li>D.R. Victor von Doom - doomD@uncc.edu - 5</li>
+            <li>Jake Summons - Sumj@gmail.com - 15</li>
+            <li>Jank Boteko - Jankin@yahoo.com - 8</li>
+            <li>Daryl Dixon - Rieck!@email.com - 7</li>
+            <li>John Doe - bill@email.com - 2</li>
+            <li>Legna Segang - evirlgng@email.com - 1</li>
+            <li>Soul Evans - Dascytheman@email.com - 9</li>
+        </ol>
+
+        <h3>Employee Data Table</h3>
+        <table>
+            <tr>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Years of Service</th>
+            </tr>
+            <tr>
+                <td>D.R. Victor von Doom</td>
+                <td>doomD@uncc.edu</td>
+                <td>5</td>
+            </tr>
+            <tr>
+                <td>Jank Boteko</td>
+                <td>Jankin@yahoo.com</td>
+                <td>15</td>
+            </tr>
+            <tr>
+                <td>Daryl Dixon</td>
+                <td>Rieck!@email.com</td>
+                <td>8</td>
+            </tr>
+            <tr>
+                <td>Jane Doe</td>
+                <td>janedoe@email.com</td>
+                <td>7</td>
+            </tr>
+            <tr>
+                <td>John Doe</td>
+                <td>bill@email.com</td>
+                <td>2</td>
+            </tr>
+            <tr>
+                <td>Legna Segang</td>
+                <td>evirlgng@email.com</td>
+                <td>1</td>
+            </tr>
+            <tr>
+                <td>Soul Evans</td>
+                <td>Dascytheman@email.com</td>
+                <td>9</td>
+            </tr>
+        </table>
+
+        <h3>Employee Data Complex Table</h3>
+        <figure>
+            <figcaption>Employee Information</figcaption>
+            <table>
+                <tr>
+                    <th>Category</th>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Salary</th>
+                </tr>
+                <tr>
+                    <td rowspan="2" headers="category">Bosses</td>
+                    <td headers="name">D.R. Victor von Doom</td>
+                    <td headers="email">doomD@uncc.edu</td>
+                    <td headers="salary">$40,000,000.01</td>
+                </tr>
+                <tr>
+                    <td headers="name">Jake Summons</td>
+                    <td headers="email">Sumj@gmail.com</td>
+                    <td headers="salary">$99,000</td>
+                </tr>
+                <tr>
+                    <td rowspan="3" headers="category">Minions</td>
+                    <td headers="name">Jank Boteko</td>
+                    <td headers="email">Jankin@yahoo.com</td>
+                    <td headers="salary">$39,860</td>
+                </tr>
+                <tr>
+                    <td headers="name">Daryl Dixon</td>
+                    <td headers="email">Rieck!@email.com</td>
+                    <td headers="salary">$78,907</td>
+                </tr>
+                <tr>
+                    <td headers="name">John Doe</td>
+                    <td headers="email">bill@email.com</td>
+                    <td headers="salary">$88,000</td>
+                </tr>
+                <tr>
+                    <td rowspan="2" headers="category">Sub Minions</td>
+                    <td headers="name">Legna Segang</td>
+                    <td headers="email">evirlgng@email.com</td>
+                    <td headers="salary">$40,000</td>
+                </tr>
+                <tr>
+                    <td headers="name">Soul Evans</td>
+                    <td headers="email">Dascytheman@email.com</td>
+                    <td headers="salary">$20,000</td>
+                </tr>
+                <tr>
+                    <th colspan="3">Total Years of Service</th>
+                    <td>47</td>
+                </tr>
+                <tr>
+                    <th colspan="3">Total Salary</th>
+                    <td>$40,365,767.01</td>
+                </tr>
+            </table>
+        </figure>
+    </main>
+
+    <footer>
+
+        <p>&copy; 2025 Angel Ganges</p>
+        
+        <p>
+            <a id="validation_link_html" href="#">
+                <img class="validation-img" src="https://www.w3.org/Icons/valid-html401" alt="Validate HTML">
+            </a>
+            <a id="validation_link_css" href="#">
+                <img class="validation-img" src="https://jigsaw.w3.org/css-validator/images/vcss" alt="Validate CSS">
+            </a>
+        </p>
+    </footer>
+
+    <script>
+        document.getElementById("validation_link_html").setAttribute("href","https://validator.w3.org/check?uri=" + location.href);
+        document.getElementById("validation_link_css").setAttribute("href","https://jigsaw.w3.org/css-validator/validator?uri=" + location.href);
+    </script>
+</body>
+</html>
