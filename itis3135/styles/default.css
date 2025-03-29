@@ -16,38 +16,34 @@ a:hover {
 }
 
 main {
-    text-align: left;
-    margin-left: 20%;
-    margin-right: 20%;
+    max-width: 1200px;
+    width: 90%;
+    margin: 0 auto;
 }
 
-h2 {
-    text-align: center;
+@media screen and (max-width: 600px) {
+    main {
+        width: 100%;
+    }
+    #colorbox {
+        background-color: red;
+    }
 }
 
-img {
-    width: 75%;
+@media screen and (min-width: 601px) and (max-width: 980px) {
+    main {
+        width: 80%;
+    }
+    #colorbox {
+        background-color: orange;
+    }
 }
 
-figure {
-    text-align: center;
-    font-style: italic;
-}
-
-/* Moved validation image styles here */
-.validation-img {
-    border: 0;
-    width: 88px;
-    height: 31px;
-}
-
-.validator-badge {
-    border: 0;
-    width: 88px;
-    height: 31px;
-    display: inline-block;
-    padding: 5px;
-    background-color: #f8f8f8; /* Light gray background */
-    border-radius: 5px;
-    box-sizing: border-box;
+@media screen and (min-width: 981px) and (max-width: 1400px) {
+    main {
+        width: 70%;
+    }
+    #colorbox {
+        background-color: yellow;
+    }
 }
