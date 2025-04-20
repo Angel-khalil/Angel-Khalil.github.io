@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Loud Feed</title>
+  <link rel="stylesheet" href="/itis3135/project/css/Loud-Feed.css" />
+</head>
+<body>
+  <header class="top-bar">
+    <h1 class="logo">Loud Feed</h1>
+  </header>
+
+  <div class="container">
+    <aside class="sidebar">
+      <div class="auth-section">
+        <h2>Welcome</h2>
+        <button class="signin" onclick="togglePopup('signup-popup')">Sign Up</button>
+        <button class="login" onclick="togglePopup('login-popup')">Log In</button>
+      </div>
+    </aside>
+
+    <main class="main-content">
+      <section class="create-post">
+        <textarea placeholder="What's on your mind?" id="postText"></textarea>
+        <input type="file" accept="image/*" id="postImage">
+        <button class="post-btn">Post</button>
+      </section>
+
+      <section class="feed" id="feed">
+        <!-- Posts will be prepended here -->
+      </section>
+    </main>
+  </div>
+
+  <!-- Popup Modals -->
+  <div id="login-popup" class="popup">
+    <div class="popup-content">
+      <h2>Welcome back</h2>
+      <p>Log in to get smarter responses, upload files and images, and more.</p>
+      <a href="https://accounts.google.com/signin" class="popup-btn primary">Log in</a>
+      <button class="popup-btn secondary" onclick="togglePopup('login-popup')">Cancel</button>
+    </div>
+  </div>
+
+  <div id="signup-popup" class="popup">
+    <div class="popup-content">
+      <h2>Join Loud Feed</h2>
+      <p>Sign up to post, comment, and connect with others.</p>
+      <a href="https://accounts.google.com/signin" class="popup-btn primary">Sign up</a>
+      <button class="popup-btn secondary" onclick="togglePopup('signup-popup')">Cancel</button>
+    </div>
+  </div>
+
+  <script src="/itis3135/project/js/Loud_Feed.js"></script>
+</body>
+</html>
