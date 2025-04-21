@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Contact - Loud Comic</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Contact Me</h1>
+    <nav>
+      <ul>
+        <li><a href="/itis3135/project/index.html">Home</a></li>
+        <li><a href="/itis3135/project/about.html">About</a></li>
+        <li><a href="/itis3135/project/character-info.html">Characters</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="contact-info">
+      <h2>Let's Connect</h2>
+      <p>Have questions, feedback, or just want to say hey? Reach out!</p>
+
+      <ul>
+        <li><strong>Email:</strong> <a href="mailto:youremail@example.com">youremail@example.com</a></li>
+        <li><strong>Portfolio/Website:</strong> <a href="https://yourwebsite.com" target="_blank">https://yourwebsite.com</a></li>
+        <li><strong>Instagram:</strong> <a href="https://instagram.com/yourhandle" target="_blank">@yourhandle</a></li>
+        <li><strong>Twitter/X:</strong> <a href="https://twitter.com/yourhandle" target="_blank">@yourhandle</a></li>
+      </ul>
+    </section>
+
+    <section id="contact-form">
+      <h2>Send a Message</h2>
+      <form action="https://formspree.io/f/yourFormID" method="POST">
+        <!-- Replace 'yourFormID' with your actual Formspree ID or your backend handler -->
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" name="name" required><br><br>
+
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="_replyto" required><br><br>
+
+        <label for="message">Message:</label><br>
+        <textarea id="message" name="message" rows="6" required></textarea><br><br>
+
+        <button type="submit">Send</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Loud Comic Project. All rights reserved.</p>
+  </footer>
+</body>
+</html>
