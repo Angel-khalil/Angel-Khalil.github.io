@@ -9,21 +9,25 @@
       margin: 0;
       padding: 20px;
       line-height: 1.6;
-      background-color: #fdfdfd;
+      background-color: #0e1628;
+      color: #f1f1f1;
     }
 
     header {
-      border-bottom: 2px solid #000;
+      border-bottom: 2px solid #1f2b47;
       margin-bottom: 20px;
+      background-color: #132040;
+      padding: 16px;
     }
 
-    header h1 {
+    header h1, header h2 {
       margin: 0;
+      color: #ffffff;
     }
 
     header h2 {
-      margin-top: 10px;
       font-size: 24px;
+      margin-top: 10px;
     }
 
     .container {
@@ -37,20 +41,21 @@
 
     .sidebar {
       width: 50%;
-      background-color: #f3f3f3;
+      background-color: #1a2b4f;
       padding: 12px;
-      border: 1px solid #ccc;
+      border: 1px solid #2f3c5d;
       box-sizing: border-box;
       display: flex;
       flex-direction: column;
       align-items: center;
+      color: #f1f1f1;
     }
 
     .sidebar img {
       width: 100%;
       max-width: 250px;
       height: auto;
-      border: 1px solid #aaa;
+      border: 1px solid #3d4f77;
       margin-bottom: 6px;
       object-fit: contain;
     }
@@ -59,6 +64,7 @@
       text-align: center;
       font-size: 13px;
       margin: 400px 0 10px 0;
+      color: #cfcfcf;
     }
 
     .sidebar table {
@@ -66,28 +72,31 @@
       font-size: 14px;
       border-collapse: collapse;
       text-align: left;
+      background-color: #1f2f52;
+      color: #eaeaea;
     }
 
     .sidebar th {
-      background-color: #ccc;
+      background-color: #2d3e67;
       text-align: left;
       padding: 8px;
-      border: 1px solid #bbb;
+      border: 1px solid #3a4a6d;
     }
 
     .sidebar td {
       padding: 8px;
-      border: 1px solid #ddd;
+      border: 1px solid #3a4a6d;
     }
 
     h2 {
       margin-top: 20px;
-      border-bottom: 1px solid #ddd;
+      border-bottom: 1px solid #2e3e5a;
+      color: #ffffff;
     }
 
     .bottom-links {
       margin-top: 40px;
-      border-top: 1px solid #aaa;
+      border-top: 1px solid #3b4a6e;
       padding-top: 10px;
       text-align: center;
       font-size: 14px;
@@ -95,7 +104,7 @@
 
     .bottom-links a {
       text-decoration: none;
-      color: #0066cc;
+      color: #4aa9ff;
       margin: 0 8px;
     }
 
@@ -110,7 +119,7 @@
 
     figcaption {
       font-style: italic;
-      color: #666;
+      color: #bbbbbb;
       margin-top: 6px;
     }
   </style>
@@ -120,6 +129,7 @@
   <header>
     <h1>Loud Comics</h1>
     <h2>Loud (character)</h2>
+    <div data-include="components/header.html"></div>
   </header>
 
   <div class="container">
@@ -128,7 +138,6 @@
 
       <h2>Background</h2>
       <p>Loud was once an ordinary teenager until a mysterious event imbued him with the power to unleash sonic force with his voice. This gift — or curse — has made him a vigilante icon and a target of secret organizations.</p>
-
 
       <p>Loud wrestles with the morality of his powers, the loss of his family, and the constant push-pull between his human side and a supernatural destiny he barely understands.</p>
 
@@ -156,18 +165,25 @@
     </aside>
   </div>
 
-  <figure>
-    <img src="/mnt/data/homepage.wireframe.drawio.png" alt="Homepage wireframe" style="width:70%; border: 1px solid #ccc;">
-    <figcaption>Figure: Homepage wireframe for the Loud Comics site design</figcaption>
-  </figure>
+  
 
-  <div class="bottom-links">
-    <a href="#">Home</a> |
-    <a href="#">Character Info</a> |
-    <a href="#">About the Creator</a> |
-    <a href="#">Art Gallery</a> |
-    <a href="#">Contact</a>
-  </div>
-
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const includes = document.querySelectorAll("[data-include]");
+      includes.forEach(async (el) => {
+        const file = el.getAttribute("data-include");
+        if (file) {
+          try {
+            const res = await fetch(file);
+            const html = await res.text();
+            el.innerHTML = html;
+          } catch (err) {
+            el.innerHTML = "<p>Error loading component.</p>";
+            console.error("Include failed:", err);
+          }
+        }
+      });
+    });
+  </script>
 </body>
 </html>

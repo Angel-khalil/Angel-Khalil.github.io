@@ -3,18 +3,12 @@
 <head>
   <meta charset="UTF-8">
   <title>Contact - Loud Comic</title>
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="/itis3135/project/css/about.css">
 </head>
 <body>
   <header>
     <h1>Contact Me</h1>
-    <nav>
-      <ul>
-        <li><a href="/itis3135/project/index.html">Home</a></li>
-        <li><a href="/itis3135/project/about.html">About</a></li>
-        <li><a href="/itis3135/project/character-info.html">Characters</a></li>
-      </ul>
-    </nav>
+    <div data-include="components/header.html"></div>
   </header>
 
   <main>
@@ -51,5 +45,24 @@
   <footer>
     <p>&copy; 2025 Loud Comic Project. All rights reserved.</p>
   </footer>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const includes = document.querySelectorAll("[data-include]");
+      includes.forEach(async (el) => {
+        const file = el.getAttribute("data-include");
+        if (file) {
+          try {
+            const res = await fetch(file);
+            const html = await res.text();
+            el.innerHTML = html;
+          } catch (err) {
+            el.innerHTML = "<p>Error loading component.</p>";
+            console.error("Include failed:", err);
+          }
+        }
+      });
+    });
+  </script>
 </body>
 </html>
