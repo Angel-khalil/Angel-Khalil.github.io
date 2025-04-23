@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Loud Comics - Home</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 20px;
+      background-color: #0e1628;
+      color: #f1f1f1;
+    }
+
+    header {
+      border-bottom: 2px solid #1f2b47;
+      margin-bottom: 20px;
+      background-color: #132040;
+      padding: 16px;
+    }
+
+    header h1 {
+      margin: 0;
+      color: #ffffff;
+      font-size: 2rem;
+    }
+
+    .nav-links {
+      margin-top: 10px;
+    }
+
+    .nav-links a {
+      color: #4aa9ff;
+      text-decoration: none;
+      margin: 0 8px;
+      font-size: 16px;
+    }
+
+    .nav-links a:hover {
+      text-decoration: underline;
+    }
+
+    .hero {
+      text-align: center;
+      margin: 40px 0;
+    }
+
+    .hero img {
+      width: 100%;
+      max-width: 600px;
+      height: 200px;
+      object-fit: contain;
+      border: 2px solid #3a4a6d;
+      
+      border-radius: 8px;
+      margin-bottom: 20px;
+    }
+
+    .hero h2 {
+      font-size: 28px;
+      color: #4aa9ff;
+    }
+
+    .hero p {
+      font-size: 16px;
+      color: #cccccc;
+      max-width: 700px;
+      margin: 0 auto;
+    }
+
+    .sections {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+      margin-top: 40px;
+    }
+
+    .card {
+      background-color: #1a2b4f;
+      border: 1px solid #2f3c5d;
+      padding: 20px;
+      width: 280px;
+      border-radius: 8px;
+      text-align: center;
+      transition: transform 0.3s ease;
+    }
+
+    .card:hover {
+      transform: scale(1.03);
+    }
+
+    .card h3 {
+      color: #ffffff;
+      margin-bottom: 10px;
+    }
+
+    .card p {
+      font-size: 14px;
+      color: #cfcfcf;
+    }
+
+    .card a {
+      display: inline-block;
+      margin-top: 10px;
+      padding: 8px 12px;
+      background-color: #4aa9ff;
+      color: #0e1628;
+      text-decoration: none;
+      border-radius: 4px;
+    }
+
+    .card a:hover {
+      background-color: #6bbaff;
+    }
+
+    .footer {
+      margin-top: 60px;
+      border-top: 1px solid #3b4a6e;
+      padding-top: 20px;
+      text-align: center;
+      font-size: 14px;
+    }
+
+    .footer a {
+      color: #4aa9ff;
+      text-decoration: none;
+      margin: 0 10px;
+    }
+
+    .footer a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div data-include="components/header.html"></div>
+  </header>
+
+  <div class="hero">
+    <img src="/itis3135/project/images/home_coverart.png" alt="Loud Comics Cover Art">
+    <h2>Welcome to the Loud Comics Universe</h2>
+    <p>Tap in and explore the on-going comic series Loud Comics.</p>
+  </div>
+
+  <div class="sections">
+    <div class="card">
+      <h3>Meet Loud</h3>
+      <p>Learn about the character who started it all his powers, past, and place in the our comic continuity.</p>
+      <a href="/itis3135/project/character-info.html">Read More</a>
+    </div>
+    <div class="card">
+      <h3>Latest Issues</h3>
+      <p>Catch up on the latest issues from Loud Comic, Fan Art, And MUCH MUCH more content. Join our community today!!!</p>
+      <a href="/itis3135/project/Loud-Feed.html">Browse Comics</a>
+    </div>
+    <div class="card">
+      <h3>Behind the Scenes</h3>
+      <p>Get insights from creator Patric G. and see how each panel comes to life.</p>
+      <a href="/itis3135/project/contact.html">Explore</a>
+    </div>
+  </div>
+
+  <div class="footer">
+    <p>&copy; 2025 Loud Comics</p>
+</div>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const includes = document.querySelectorAll("[data-include]");
+      includes.forEach(async (el) => {
+        const file = el.getAttribute("data-include");
+        if (file) {
+          try {
+            const res = await fetch(file);
+            const html = await res.text();
+            el.innerHTML = html;
+          } catch (err) {
+            el.innerHTML = "<p>Error loading component.</p>";
+            console.error("Include failed:", err);
+          }
+        }
+      });
+    });
+  </script>
+</body>
+</html>
