@@ -4,13 +4,13 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Loud Feed</title>
-  
-  <link rel="stylesheet" href="/itis3135/project/css/Loud-Feed.css" />
+  <script src="js/Loud_Feed.js"></script>
+  <link rel="stylesheet" href="css/Loud-Feed.css" />
 </head>
 <body>
   <header class="top-bar">
     
-    <!-- Dynamically include the nav component -->
+
     <div data-include="components/header.html"></div>
   </header>
 
@@ -20,7 +20,7 @@
       <p>Share your thoughts!</p>
 
       <div id="commentSlab">
-        <!-- Comments will appear here -->
+        
       </div>
     </aside>
 
@@ -32,15 +32,14 @@
       </section>
 
       <section class="feed" id="feed">
-        <!-- Posts will appear here -->
+        
       </section>
     </main>
   </div>
 
-  <!-- Load JS for feed interaction -->
-  <script src="/itis3135/project/js/Loud_Feed.js"></script>
 
-  <!-- JS to include header.html -->
+
+  
   <script>
     document.addEventListener("DOMContentLoaded", function () {
       const includes = document.querySelectorAll("[data-include]");

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BYO Intro</title>
+  <link rel="stylesheet" href="styles/default.css" />
+  <script defer src="scripts/survey.js"></script>
+</head>
+<body>
+  <header>
+    <h1>BYO Intro Page</h1>
+    <div data-include="components/header.html"></div>
+  </header>
+
+  <main>
+    <h2>BYO Intro</h2>
+    <h3>Submit this form to request a page made by us!!!</h3>
+
+    <form id="introForm">
+      <label>Name: <input type="text" name="name" required /></label><br />
+      <label>Mascot: <input type="text" name="mascot" required /></label><br />
+      <label>Image: <input type="file" name="image" id="image" accept="image/png, image/jpeg" required /></label><br />
+      <img id="imagePreview" src="" alt="Image Preview" style="display:none; max-width:200px;"><br />
+      <label>Image Caption: <input type="text" name="caption" required /></label><br />
+      <label>Personal Background: <textarea name="personal" required></textarea></label><br />
+      <label>Professional Background: <textarea name="professional" required></textarea></label><br />
+      <label>Academic Background: <textarea name="academic" required></textarea></label><br />
+      <label>Background in Web Development: <textarea name="webdev" required></textarea></label><br />
+      <label>Primary Computer Platform: <input type="text" name="platform" required /></label><br />
+
+      <div id="coursesContainer">
+        <label>Courses Currently Taking:</label>
+        <button type="button" id="addCourse">Add Course</button>
+      </div><br />
+
+      <label>Funny thing? <textarea name="funnyThing"></textarea></label><br />
+      <label>Anything else? <textarea name="anythingElse"></textarea></label><br />
+
+      <label><input type="checkbox" name="agree" required /> I understand that what is on this page is not password protected and I will not put anything here that I don’t want publicly available.</label><br />
+
+      <input type="submit" value="Submit" />
+      <input type="reset" value="Reset" />
+    </form>
+
+    <div id="resultContainer"></div>
+    <button id="resetResultBtn" style="display:none;" onclick="resetResult()">Reset Form</button>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Your Name. All Rights Reserved.</p>
+    <div data-include="components/footer.html"></div>
+  </footer>
+  <script src="scripts/HTMLInclude.min.js"></script>
+</body>
+</html>

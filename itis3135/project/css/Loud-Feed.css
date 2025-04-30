@@ -1,4 +1,3 @@
-/* General styles */
 body {
   margin: 0;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -24,7 +23,7 @@ body {
   font-size: 1.8rem;
   margin: 0;
   color: white;
-  position: absolute; /* Keep the logo fixed at the top-left */
+  position: absolute; 
   left: 1rem;
 }
 
@@ -85,7 +84,7 @@ body {
   gap: 1.5rem;
 }
 
-/* === Post Card === */
+
 .post {
   background-color: #121d2a;
   border: 1px solid black;
@@ -105,7 +104,7 @@ body {
   margin-bottom: 1rem;
 }
 
-/* === Post Actions === */
+
 .post-actions {
   display: flex;
   flex-direction: column;
@@ -136,7 +135,7 @@ body {
   background-color: #f0f0f0;
 }
 
-/* Like/Dislike group on posts */
+
 .action-buttons {
   display: flex;
   justify-content: center;
@@ -144,14 +143,14 @@ body {
   margin-bottom: 0.5rem;
 }
 
-/* Like/Dislike Counters */
+
 button span {
   margin-left: 0.3rem;
   font-weight: bold;
   color: #1a73e8;
 }
 
-/* === Sidebar Comments === */
+
 .comment-container {
   width: 90%;
   background-color: #121d2a;
@@ -165,7 +164,7 @@ button span {
   margin: 0 0 0.5rem 0;
 }
 
-/* Comment action buttons */
+
 .comment-actions {
   display: flex;
   flex-direction: row;
@@ -189,7 +188,7 @@ button span {
   gap: 0.2rem;
 }
 
-/* ✅ Keep buttons from resizing when content changes */
+
 .comment-container button.like-btn,
 .comment-container button.dislike-btn,
 .comment-container button.reply-btn {
@@ -198,12 +197,12 @@ button span {
   flex-shrink: 0;
 }
 
-/* Reply-specific button behavior */
+
 .comment-container button.reply-btn {
   text-align: center;
 }
 
-/* === Reply Section === */
+
 .reply-box {
   width: 100%;
   margin-top: 0.5rem;
@@ -232,7 +231,7 @@ button span {
   background-color: #155ab6;
 }
 
-/* === Top Bar Navigation === */
+
 .top-bar {
   background-color: #0b1a2f;
   padding: 1rem;
